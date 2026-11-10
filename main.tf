@@ -16,6 +16,7 @@ data "aws_ami" "ubuntu" {
 # resource-type = 'aws_instance'
 # resource-name = 'app_server'
 # resource-address = resource.type + '.' + resource.name
+/*
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
@@ -28,6 +29,7 @@ resource "aws_instance" "app_server" {
     Dev  = "john-oatis"
   }
 }
+*/
 
 # REMEMBER: After adding a new module, you need to run `terraform init`
 
